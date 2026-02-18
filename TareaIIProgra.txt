@@ -1,0 +1,35 @@
+1******************************************
+****La salida esperada esperada es 20,20,20* 
+*******************************************
+Explicación
+
+A. Se declara X con valor 8 y se ninicaliza con una variable entera que es x
+en el stack se le asigna el valor 8
+
+B. Se declara un puntero int* con la asignación p que almacena la dirección de memoria de la variable x &x;
+	
+C. Int* q = p; Se declara un puntero q y se le asigna el mismo valor que contiene p es de cir la dirección de x.
+   p y q son punteros que referencian a la misma ubicación de memoria.
+
+D. *q = 20 le estamos asignando mediante la referencia * se accede a la dirección de memoria almacenada y se lde da el valor de 20 reemplazando el valor de 8 a 20 afectando direcamente a x ( sobreescribiendo)
+
+y
+ cout << x << endl;
+ cout << *p << endl;
+ cout << *q << endl;
+
+son las salidas del programa todas igual a 20
+
+
+2*****************************************
+**** 3 Espacios de memoria (x,  *p, *q) * 
+*******************************************
+Explicación
+  1 espacio para la variable entera x.
+  1 para almacenar el puntero p (Guarda dirección de memoria)
+  1 para almacenar el puntero q ( que guarda una dirección de memoria)
+
+3*****************************************
+**** Si existe Aliasing 3 Espacios de memoria (x,  *p, *q) * 
+*******************************************
+
